@@ -26,7 +26,7 @@ router.post(
   authController.login
 );
 
-// Get current user (protected)
+// Protected
 router.get('/me', auth, authController.getMe);
 
 module.exports = router;
