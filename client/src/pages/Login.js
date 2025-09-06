@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -18,6 +20,11 @@ export default function Login() {
       });
       localStorage.setItem("token", res.data.token); // Save JWT
       setSuccess("✅ Login successful!");
+      
+      // redirect after a short delay
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 800);
     } catch (err) {
       console.error(err);
       setError("❌ Invalid email or password");
