@@ -1,0 +1,206 @@
+{
+  "users": [
+    {
+      "id": "usr_demo_101",
+      "name": "Sarah Jenkins",
+      "email": "demo@medimate.ai",
+      "passwordHash": "$2b$10$/eNF4JwwgdqbJK9k8Hv/k.kw35.6W3u80JCotR9t0DgFqDmbrayqO",
+      "createdAt": "2026-09-01T10:46:15.433Z"
+    }
+  ],
+  "healthProfiles": [
+    {
+      "id": "prof_demo_101",
+      "userId": "usr_demo_101",
+      "dateOfBirth": "1992-06-15",
+      "sex": "female",
+      "bloodType": "A+",
+      "heightCm": 168,
+      "weightKg": 64,
+      "allergies": [
+        {
+          "name": "Penicillin",
+          "severity": "moderate",
+          "reaction": "Mild hives and skin rash"
+        },
+        {
+          "name": "Tree nuts",
+          "severity": "mild",
+          "reaction": "Oral tingling sensation"
+        }
+      ],
+      "chronicConditions": [
+        "Mild Seasonal Asthma",
+        "Occasional Tension Headaches"
+      ],
+      "medicalHistory": "Appendectomy in 2014. No major chronic cardiovascular issues. Regular aerobic runner.",
+      "familyHistory": "Maternal history of hypertension. Paternal history of Type 2 diabetes.",
+      "emergencyContact": {
+        "name": "David Jenkins",
+        "relationship": "Spouse",
+        "phone": "+1 (555) 234-8901"
+      },
+      "updatedAt": "2026-09-29T10:46:15.433Z"
+    }
+  ],
+  "medications": [
+    {
+      "id": "med_101",
+      "userId": "usr_demo_101",
+      "name": "Albuterol HFA Inhaler",
+      "dosage": "90 mcg / 2 puffs",
+      "frequency": "As needed for acute wheezing / exercise",
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "instructions": "Rinse mouth with water after use. Shake well before puffing.",
+      "prescribedFor": "Exercise-induced bronchospasm",
+      "startDate": "2025-01-10",
+      "active": true,
+      "notes": "Keep with gym bag during running sessions.",
+      "logs": [
+        {
+          "date": "2026-09-30",
+          "taken": true,
+          "timestamp": "2026-09-30T10:46:15.433Z"
+        },
+        {
+          "date": "2026-10-01",
+          "taken": true,
+          "timestamp": "2026-10-01T10:46:15.433Z"
+        }
+      ],
+      "createdAt": "2026-08-02T10:46:15.433Z",
+      "updatedAt": "2026-10-01T10:46:15.433Z"
+    },
+    {
+      "id": "med_102",
+      "userId": "usr_demo_101",
+      "name": "Vitamin D3 (Cholecalciferol)",
+      "dosage": "2000 IU (1 softgel)",
+      "frequency": "Once daily with breakfast",
+      "timeOfDay": [
+        "morning"
+      ],
+      "instructions": "Take with a meal containing healthy dietary fats for optimal absorption.",
+      "prescribedFor": "Vitamin D deficiency maintenance",
+      "startDate": "2025-02-01",
+      "active": true,
+      "notes": "Check serum 25-hydroxyvitamin D levels in 6 months.",
+      "logs": [
+        {
+          "date": "2026-10-01",
+          "taken": true,
+          "timestamp": "2026-10-01T10:46:15.433Z"
+        }
+      ],
+      "createdAt": "2026-08-22T10:46:15.433Z",
+      "updatedAt": "2026-10-01T10:46:15.433Z"
+    },
+    {
+      "id": "med_103",
+      "userId": "usr_demo_101",
+      "name": "Cetirizine (Zyrtec)",
+      "dosage": "10 mg tablet",
+      "frequency": "Once daily at bedtime as needed",
+      "timeOfDay": [
+        "bedtime"
+      ],
+      "instructions": "Non-drowsy antihistamine for spring seasonal pollen flare-ups.",
+      "prescribedFor": "Seasonal allergic rhinitis",
+      "startDate": "2025-03-01",
+      "active": false,
+      "notes": "Paused for summer season; resume if pollen count rises.",
+      "logs": [],
+      "createdAt": "2026-09-06T10:46:15.433Z",
+      "updatedAt": "2026-09-26T10:46:15.433Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_101",
+      "userId": "usr_demo_101",
+      "title": "Persistent Cough & Post-Exercise Tightness",
+      "messages": [
+        {
+          "id": "msg_1",
+          "role": "user",
+          "content": "Hi MediMate, I have had a dry cough for the past 4 days, especially noticeable right after my morning jogs. I do have mild asthma. Should I be concerned?",
+          "timestamp": "2026-09-29T22:46:15.433Z"
+        },
+        {
+          "id": "msg_2",
+          "role": "assistant",
+          "content": "Hello Sarah. I'm here to help you understand your symptoms, though please remember this guidance is educational and does not replace a clinical examination.\n\nGiven your known history of mild asthma, a dry cough that flares after physical exertion in cool morning air is often consistent with **exercise-induced bronchospasm (EIB)** or mild airway irritation. \n\n### Key Aspects to Observe:\n1. **Response to Inhaler**: Does taking your prescribed Albuterol 15 minutes before running prevent this cough, or does a puff ease the tightness when it starts?\n2. **Associated Signs**: Are you experiencing fever, sore throat, or nasal congestion that might indicate a mild viral upper respiratory infection?\n3. **Onset & Triggers**: Have there been recent temperature drops, elevated outdoor pollen, or humidity shifts along your jogging route?\n\n### ⚠️ When to Seek Prompt Medical Attention:\nIf you experience any of the following, seek urgent medical evaluation or emergency care immediately:\n* Shortness of breath at rest that does not rapidly respond to your rescue inhaler\n* Struggling to speak in full sentences\n* Chest pain, pressure, or blue tint around the lips/fingernails\n\n### Suggested Questions for Your Physician:\n* \"Could we review my pre-exercise asthma action plan?\"\n* \"Would a short-term controller inhaler be beneficial if morning cough persists?\"",
+          "timestamp": "2026-09-29T22:46:19.433Z",
+          "isUrgent": false,
+          "suggestedQuestions": [
+            "How can I warm up my airways before cold weather running?",
+            "What is the difference between asthma flare-up and bronchitis?",
+            "What should I write down to monitor my peak flow?"
+          ]
+        },
+        {
+          "id": "msg_3",
+          "role": "user",
+          "content": "That makes a lot of sense. The weather has been around 45°F and dry. What questions should I write down for my checkup on Friday?",
+          "timestamp": "2026-09-29T23:46:15.433Z"
+        },
+        {
+          "id": "msg_4",
+          "role": "assistant",
+          "content": "That cool, dry air (45°F) is a very well-documented trigger for airway constriction.\n\nHere is a concise list of high-value questions you can take to your Friday appointment:\n\n1. **Trigger Management**: *\"My cough consistently triggers during outdoor runs in dry 45°F air. Should I adjust my Albuterol pre-treatment timing?\"*\n2. **Symptom Log**: *\"I have noticed this for 4 days. Is this a mild seasonal exacerbation or a secondary viral infection?\"*\n3. **Inhaler Technique**: *\"Could we quickly verify my spacer and inhalation technique to ensure maximal medication delivery?\"*\n4. **Action Plan Thresholds**: *\"At what peak flow level or rescue puff frequency would you prefer I call the clinic?\"*\n\nIn the meantime, consider wearing a light fabric neck gaiter loosely over your nose and mouth during runs to help warm and humidify the air you inhale.",
+          "timestamp": "2026-09-29T23:46:18.433Z",
+          "isUrgent": false,
+          "suggestedQuestions": [
+            "Does using a spacer really make a difference with inhalers?",
+            "How does humidity impact asthma symptoms?"
+          ]
+        }
+      ],
+      "createdAt": "2026-09-29T22:46:15.433Z",
+      "updatedAt": "2026-09-29T23:46:15.433Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist_101",
+      "userId": "usr_demo_101",
+      "type": "consultation",
+      "title": "Symptom Review: Exercise-Induced Cough",
+      "description": "Discussed post-jog dry cough in 45°F weather and generated doctor appointment questions.",
+      "metadata": {
+        "conversationId": "conv_101"
+      },
+      "timestamp": "2026-09-29T23:46:15.433Z"
+    },
+    {
+      "id": "hist_102",
+      "userId": "usr_demo_101",
+      "type": "medication",
+      "title": "Medication Adherence Recorded",
+      "description": "Logged morning doses for Albuterol HFA and Vitamin D3.",
+      "metadata": {
+        "medicationName": "Albuterol HFA Inhaler"
+      },
+      "timestamp": "2026-10-01T10:46:15.433Z"
+    },
+    {
+      "id": "hist_103",
+      "userId": "usr_demo_101",
+      "type": "profile",
+      "title": "Health Profile Updated",
+      "description": "Updated baseline weight (64 kg) and confirmed allergy list.",
+      "timestamp": "2026-09-29T10:46:15.433Z"
+    },
+    {
+      "id": "hist_104",
+      "userId": "usr_demo_101",
+      "type": "note",
+      "title": "Blood Pressure Self-Check",
+      "description": "Resting BP reading: 118/76 mmHg, pulse 62 bpm after 10 minutes of quiet sitting.",
+      "timestamp": "2026-09-27T10:46:15.433Z"
+    }
+  ]
+}

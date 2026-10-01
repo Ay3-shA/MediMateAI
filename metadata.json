@@ -1,0 +1,6 @@
+{
+  "name": "MediMateAI - Personal Health Companion",
+  "description": "A calm, modern, and trustworthy personal health companion for symptom guidance, medication tracking, and personal health organization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
